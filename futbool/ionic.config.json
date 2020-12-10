@@ -1,0 +1,7 @@
+{
+  "name": "futbool",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
