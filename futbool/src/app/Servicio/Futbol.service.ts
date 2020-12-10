@@ -1,6 +1,6 @@
-mport { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-//simport { Respuesta } from '../modelos/noticia';
+import { Respuesta } from '../modelo/Futbol';
 import { environment } from '../../environments/environment';
 
 @Injectable({
