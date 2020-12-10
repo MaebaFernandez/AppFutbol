@@ -1,20 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { NoticiaService } from '../../servicios/';
-import { Article } from '../../modelos/noticia';
+import { Component } from '@angular/core';
+import { FutbolService } from '../../Servicio/Futbol.service';
+import {  Pais } from '../../modelo/Futbol';
+
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page implements OnInit {
-  noticias : Article[] = [];
-  constructor(private noticiasServicios: NoticiaService) {}
-  ngOnInit() {
-    this.noticiasServicios.getNoticias()
+export class Tab1Page {
+  paises : Pais[] = [];
+   constructor(public futbolServicios: FutbolService) {
+    this.Paises()
+
+   }
+   Paises(){
+     this.futbolServicios.getPaises()
       .subscribe((resultado) => {
-        this.noticias.push(...resultado.articles);
-      });
-  }
-  
+        console.log(resultado);
+        this.paises.push(...resultado.response)
+      
+    });
+      
 }
+}
+
+  
+

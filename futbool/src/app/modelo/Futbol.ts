@@ -4,7 +4,7 @@
         total: number;
     }
 
-    export interface Ciudad {
+    export interface Pais {
         name: string;
         code: string;
         flag: string;
@@ -16,17 +16,8 @@
         errors: any[];
         results: number;
         paging: Paging;
-        response: ciudad[];
+        response: Pais[];
     }
 
-    export interface Respuesta {
-        get: string;
-        parameters: any[];
-        errors: any[];
-        results: number;
-        paging: Paging;
-        response: number[];
-    }
 
-    
-
+   

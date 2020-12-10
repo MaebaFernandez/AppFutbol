@@ -1,3 +1,19 @@
-<p>
-  paises works!
-</p>
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let pais of paisesLista" size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+     
+      <ion-card>
+        <ion-card-header>
+          <ion-label>{{pais.nombre}}</ion-label>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title >{{pais.nombre}}</ion-card-title>
+        </ion-card-header>
+             <ion-labe>{{pais.code}}</ion-labe>
+        
+      </ion-card>
+
+      
+     
+    </ion-col>
+  </ion-row>
+</ion-grid>
