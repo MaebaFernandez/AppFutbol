@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import {  Pais } from '../../modelo/Futbol';
+import {  Response } from '../../modelo/Futbol';
 
 @Component({
   selector: 'app-paises',
@@ -7,7 +7,7 @@ import {  Pais } from '../../modelo/Futbol';
   styleUrls: ['./paises.component.scss'],
 })
 export class PaisesComponent implements OnInit {
-  @Input() paisesLista : Pais [] = [];
+  @Input() paisesLista : Response [] = [];
   constructor() { }
 
   ngOnInit() {}

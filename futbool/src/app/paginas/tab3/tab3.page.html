@@ -1,17 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" no-border>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 3
+      Entrenadores de la liga
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>informacion del Entrenador </ion-card-subtitle>
+      
+    </ion-card-header>
+  
+    <app-entrenador [EntrenadorLista]="entrenadores" ></app-entrenador>
+  </ion-card>
 </ion-content>

@@ -1,0 +1,24 @@
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let equipo of EquipoLista" size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+     
+      <ion-card>
+        <ion-card-header>
+          <ion-label>{{equipo.team.name}}</ion-label>      
+  
+          <ion-card-title >{{equipo.team.country}}</ion-card-title>
+        </ion-card-header>
+            
+             <ion-img [src]="equipo.team.logo"></ion-img>
+             
+             
+             
+
+        
+      </ion-card>
+
+      
+     
+    </ion-col>
+  </ion-row>
+</ion-grid>

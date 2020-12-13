@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FutbolService } from '../../Servicio/Futbol.service';
-import {  Pais } from '../../modelo/Futbol';
+import {  Response } from '../../modelo/Futbol';
 
 
 @Component({
@@ -9,7 +9,7 @@ import {  Pais } from '../../modelo/Futbol';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  paises : Pais[] = [];
+  paises : Response[] = [];
    constructor(public futbolServicios: FutbolService) {
     this.Paises()
 

@@ -4,11 +4,16 @@
      
       <ion-card>
         <ion-card-header>
-          <ion-label>{{pais.nombre}}</ion-label>
-          <ion-card-subtitle></ion-card-subtitle>
-          <ion-card-title >{{pais.nombre}}</ion-card-title>
+          <ion-labe>{{pais.code}}</ion-labe>      
+  
+          <ion-card-title >{{pais.name}}</ion-card-title>
         </ion-card-header>
-             <ion-labe>{{pais.code}}</ion-labe>
+            
+             <ion-img [src]="pais.flag"></ion-img>
+             
+             
+             
+
         
       </ion-card>
 

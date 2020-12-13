@@ -4,7 +4,7 @@
         total: number;
     }
 
-    export interface Pais {
+    export interface Response {
         name: string;
         code: string;
         flag: string;
@@ -16,7 +16,7 @@
         errors: any[];
         results: number;
         paging: Paging;
-        response: Pais[];
+        response: Response[];
     }
 
 

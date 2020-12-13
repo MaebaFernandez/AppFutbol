@@ -1,9 +1,0 @@
-<ion-card>
-  <ion-card-header>
-    <span class="pais-nombre">{{pais.nombre}}</span>
-    <ion-card-subtitle></ion-card-subtitle>
-    <ion-card-title (click)="mostrarPais()">{{pais.code}}</ion-card-title>
-  </ion-card-header>
-  <ion-img (click)="mostrarPais()" *ngIf="pais.flag" [src]="pais.flag"></ion-img>
-  
-</ion-card>

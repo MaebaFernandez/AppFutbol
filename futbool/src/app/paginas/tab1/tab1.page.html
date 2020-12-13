@@ -5,7 +5,15 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content [fullscreen]="true"  color="dark">
-  <!-- <app-paises [PisesLista]="Paises"></app-paises> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Paises Partipantes </ion-card-subtitle>
+      
+    </ion-card-header>
+  
+    <app-paises [paisesLista]="paises" ></app-paises>
+  </ion-card>
 </ion-content>
+

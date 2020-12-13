@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  apiKey:"54df205f02msh15078be8c1aef1dp132295jsn34e179c8bece",
+  apiKey:"a56a17ccb2msh65cf91bdf8cab6bp162c19jsnbe27e33723ff",
   host:"api-football-beta.p.rapidapi.com",
   urlBase:"https://api-football-beta.p.rapidapi.com/"
 };

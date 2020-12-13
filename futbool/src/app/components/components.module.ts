@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PaisesComponent} from './paises/paises.component';
-import { PaisComponent} from './pais/pais.component';
 import { IonicModule } from '@ionic/angular';
+import { EntrenadorComponent } from './entrenador/entrenador.component';
+import { EquipoComponent } from './equipo/equipo.component';
+
 
 
 
 @NgModule({
   declarations: [
-    PaisComponent,
-    PaisesComponent
+    PaisesComponent,
+    EntrenadorComponent,
+    EquipoComponent
 
   ],
   imports: [
@@ -17,8 +20,9 @@ import { IonicModule } from '@ionic/angular';
     IonicModule
   ],
   exports:[
-    PaisComponent,
-    PaisesComponent
+    PaisesComponent,
+    EntrenadorComponent,
+    EquipoComponent
 
   ]
 
